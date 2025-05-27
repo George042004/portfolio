@@ -154,3 +154,7 @@ html
 {
     scroll-behavior: smooth;
 }
+a
+{
+    color: white;
+}
