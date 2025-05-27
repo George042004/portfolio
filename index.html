@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script src="script.js"></script>
+    <title>personal portfolio</title>
+</head>
+<body id="body">
+    <header  id='Home'>
+        <nav id="nav">
+            <a href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#Projects">Projects</a>
+            <a href="#Contacts">Contacts</a>
+            <i class="fa-solid fa-sun" id="light" onclick="light()"></i>
+            <i class="fa-solid fa-moon" id="dark" onclick="dark()"></i>
+        </nav>
+        <h1 id="Home">About Me</h1>
+    </header>
+    <main>
+        <section id="About">
+            <p>Welcome guys</p>
+            <h1>George Mullar</h1>
+            <p>I'm studying B-tech 3rd year in RCEE. <br>My branch is <em>Artificial Intellegnce and Data Science</em>.</p>
+        </section>
+            <img src="image.JPG" alt="Image">
+        <section id="sec">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML, CSS, JS</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>C</li>
+            </ul>
+            <h2 id="Projects">Projects</h2>
+            <h3>project 1</h3>
+            <a href="p1">p1</a>
+            <h3>project 2</h3>
+            <a href="p2">p2</a>
+            <h3>project 3</h3>
+            <a href="p3">p3</a>
+        </section>
+    </main>
+
+    <footer id="Contacts">
+        <form action="submit" method="post">
+            <input type="text" placeholder="Name" id="name">
+            <input type="tel" placeholder="Phone" maxlength="10" id="tele">
+            <textarea placeholder="Comments" id="text"></textarea>
+            <button id="button">submit</button>
+        </form>
+        <p id="copy">&copy 2025 George</p>
+        <div id="social">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+    </footer>
+</body>
+</html>
