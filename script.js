@@ -33,3 +33,15 @@ function dark()
     document.getElementById('nav').style.boxShadow='0px 0px 5px white';
 
 }
+
+document.getElementById('menubar').addEventListener('click',function(){
+    let navbar=document.getElementById('nav').style;
+    if(navbar.display==='none')
+    {
+        document.getElementById('nav').style.display='flex';
+    }
+    else
+    {
+        document.getElementById('nav').style.display='none';
+    }
+});

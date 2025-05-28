@@ -5,6 +5,28 @@ body
     font-family: optional;
     transition: 1.5s;
 }
+nav>a:hover
+{
+    transform: scale(110%);
+}
+section:hover
+{
+    background-color: white;
+    color: navy;
+}
+html 
+{
+    scroll-behavior: smooth;
+}
+a
+{
+    color: white;
+}
+
+
+/* for laptop */
+@media (min-width: 769px) and (max-width:14480px)
+{
 #nav
 {
     background-color: blue;
@@ -30,10 +52,7 @@ nav>a
     font-size: 20px;
     transition: 0.5s;
 }
-nav>a:hover
-{
-    transform: scale(110%);
-}
+
 h1
 {
     margin: 100px;
@@ -78,11 +97,7 @@ section
     padding: 10px;
     transition: 0.6s;
 }
-section:hover
-{
-    background-color: white;
-    color: navy;
-}
+
 section>a
 {
     color: white;
@@ -150,11 +165,155 @@ button
     border-style: solid;
     cursor: pointer;
 }
-html 
-{
-    scroll-behavior: smooth;
 }
-a
+
+
+
+
+/* for mobile */
+@media (max-width: 480px)
+{
+    #nav
+{
+    background-color: blue;
+    height: 300px;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+    gap: auto;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px black;
+    transition: 1.5s;
+}
+#menubar
+{
+    z-index: 1;
+    font-size: 25px;
+}
+nav>a
 {
     color: white;
+    text-decoration: none;
+    font-family: optional;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+h1
+{
+    margin: 100px;
+    margin-top: 80px;
+}
+p
+{
+    margin: 20px;
+}
+img
+{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 10px solid white;
+    box-shadow: 0px 0px 50px black;
+    transition: 0.5s;
+    float: right;
+    margin: 20px;
+    right: 90px;
+    position: relative;
+    top: -360px;
+}
+img:hover
+{
+    transform: scale(110%);
+}
+h2,h3
+{
+    margin: 100px;
+}
+li
+{
+    font-size: 20px;
+    margin-left: 20px;
+}
+section
+{
+    border: 0.1px solid white;
+    margin: 100px;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.6s;
+}
+
+section>a
+{
+    color: white;
+    text-decoration: none;
+    margin-left: 100px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+#sec:hover
+{
+    color: navy;
+}
+footer
+{
+    background-color: rgb(19, 19, 19);
+    position: relative;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    height: 300px;
+    width: 110%;
+}
+form
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: auto;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+#copy
+{
+    text-align: center;
+}
+#social
+{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+input,textarea
+{
+    height: 15px;
+    width: 200px;
+    border-radius: 5px;
+    padding: 5px;
+}
+button
+{
+    height: 30px;
+    width: 150px;
+    border-radius: 5px;
+    color: white;
+    background-color: navy;
+    border-style: solid;
+    cursor: pointer;
+}
 }
