@@ -165,6 +165,10 @@ button
     border-style: solid;
     cursor: pointer;
 }
+#menubar
+{
+    display: none;
+}
 }
 
 
@@ -173,27 +177,32 @@ button
 /* for mobile */
 @media (max-width: 480px)
 {
-    #nav
+#nav
 {
     background-color: blue;
     height: 300px;
     width: 200px;
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
+    top: 10px;
+    left: 10;
     display: none;
     align-items: center;
     justify-content: space-around;
     gap: auto;
+    z-index: 0;
     flex-direction: column;
     box-shadow: 0px 0px 5px black;
-    transition: 1.5s;
 }
-#menubar
+#menubars
 {
     z-index: 1;
     font-size: 25px;
+    position: sticky;
+    top: 10px;
+    left: 10px;
+    box-shadow: 0px 0px 3px black;
+    padding: 4px;
+    border-radius: 10px;
 }
 nav>a
 {
@@ -206,7 +215,7 @@ nav>a
 
 h1
 {
-    margin: 100px;
+    margin: 40px;
     margin-top: 80px;
 }
 p
@@ -215,17 +224,17 @@ p
 }
 img
 {
-    height: 150px;
-    width: 150px;
+    height: 80px;
+    width: 80px;
     border-radius: 50%;
-    border: 10px solid white;
+    border: 5px solid white;
     box-shadow: 0px 0px 50px black;
     transition: 0.5s;
     float: right;
     margin: 20px;
-    right: 90px;
+    right: 35px;
     position: relative;
-    top: -360px;
+    top: -280px;
 }
 img:hover
 {
@@ -233,7 +242,7 @@ img:hover
 }
 h2,h3
 {
-    margin: 100px;
+    margin: 20px;
 }
 li
 {
@@ -243,7 +252,8 @@ li
 section
 {
     border: 0.1px solid white;
-    margin: 100px;
+    margin: 20px;
+    margin-left: 20px;
     border-radius: 10px;
     padding: 10px;
     transition: 0.6s;
@@ -280,7 +290,6 @@ form
     width: auto;
     flex-direction: row;
     gap: 10px;
-    margin-left: 50px;
     margin-top: 50px;
 }
 #copy
@@ -301,8 +310,8 @@ form
 }
 input,textarea
 {
-    height: 15px;
-    width: 200px;
+    height: 20px;
+    width: 150px;
     border-radius: 5px;
     padding: 5px;
 }

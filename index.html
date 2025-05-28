@@ -10,7 +10,7 @@
 </head>
 <body id="body">
     <header  id='Home'>
-        <i class="fa-solid fa-bars" id="menubar"></i>
+    <i class="fa-solid fa-bars" id="menubars" onclick="menubarfun()"></i>
         <nav id="nav">
             <a href="#Home">Home</a>
             <a href="#About">About</a>
@@ -36,7 +36,9 @@
                 <li>Java</li>
                 <li>C</li>
             </ul>
-            <h2 id="Projects">Projects</h2>
+        </section>
+        <section id="Projects">
+            <h2>Projects</h2>
             <h3>project 1</h3>
             <a href="p1">p1</a>
             <h3>project 2</h3>
@@ -47,7 +49,7 @@
     </main>
 
     <footer id="Contacts">
-        <form action="submit" method="post">
+        <form>
             <input type="text" placeholder="Name" id="name">
             <input type="tel" placeholder="Phone" maxlength="10" id="tele">
             <textarea placeholder="Comments" id="text"></textarea>

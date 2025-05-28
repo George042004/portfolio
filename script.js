@@ -13,6 +13,7 @@ document.getElementById('button').addEventListener('click',function(){
     {
         alert('submitted!');
     }
+
 });
 });
 
@@ -34,9 +35,10 @@ function dark()
 
 }
 
-document.getElementById('menubar').addEventListener('click',function(){
-    let navbar=document.getElementById('nav').style;
-    if(navbar.display==='none')
+function menubarfun()
+{
+    let val = document.getElementById('nav').style;
+    if(val.display==='none')
     {
         document.getElementById('nav').style.display='flex';
     }
@@ -44,4 +46,4 @@ document.getElementById('menubar').addEventListener('click',function(){
     {
         document.getElementById('nav').style.display='none';
     }
-});
+}
