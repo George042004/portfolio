@@ -171,9 +171,6 @@ button
 }
 }
 
-
-
-
 /* for mobile */
 @media (max-width: 480px)
 {
@@ -189,6 +186,7 @@ button
     align-items: center;
     justify-content: space-around;
     gap: auto;
+    transition: 1s;
     z-index: 0;
     flex-direction: column;
     box-shadow: 0px 0px 5px black;
