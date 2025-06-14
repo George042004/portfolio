@@ -19,8 +19,9 @@ document.getElementById('button').addEventListener('click',function(){
 
 function light()
 {
-    document.getElementById('body').style.backgroundColor='navy';
-    document.getElementById('nav').style.backgroundColor='blue';
+    document.getElementById('body').style.backgroundColor='lightgray';
+    document.getElementById('body').style.color='black'
+    document.getElementById('nav').style.backgroundColor='gray';
     document.getElementById('nav').style.color='white';
     document.getElementById('nav').style.boxShadow='0px 0px 5px black';
     
@@ -29,6 +30,7 @@ function light()
 function dark()
 {
     document.getElementById('body').style.backgroundColor='black';
+    document.getElementById('body').style.color='white';
     document.getElementById('nav').style.backgroundColor='black';
     document.getElementById('nav').style.color='white';
     document.getElementById('nav').style.boxShadow='0px 0px 5px white';

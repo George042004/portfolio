@@ -1,7 +1,7 @@
 body
 {
-    background-color: navy;
-    color: white;
+    background-color: lightgray;
+    color: black;
     font-family: optional;
     transition: 1.5s;
 }
@@ -23,13 +23,51 @@ a
     color: white;
 }
 
+#name
+{
+    color: crimson;
+    font-size: 30px;
+}
+
+
+a
+{
+    color: black;
+    border: 2px solid gray;
+    box-shadow: 0px 0px 5px gray,0px 0px 5px gray inset;
+    padding: 5px;
+    border-radius: 2px;
+    background-color: gray;
+}
+
+#socin
+{
+    background-color: transparent;
+    color: white;
+    box-shadow: none;
+    border: none;
+}
+
+#copypara
+{
+    text-align: center;
+    color: white;
+}
+
+#navitems
+{
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
 
 /* for laptop */
 @media (min-width: 769px) and (max-width:14480px)
 {
 #nav
 {
-    background-color: blue;
+    background-color: rgba(36, 36, 36, 0.6);
     height: 40px;
     width: auto;
     position: fixed;
@@ -43,6 +81,7 @@ a
     box-shadow: 0px 0px 5px black;
     z-index: 1;
     transition: 1.5s;
+    backdrop-filter: blur(5px);
 }
 nav>a
 {
@@ -91,10 +130,10 @@ li
 }
 section
 {
-    border: 0.1px solid white;
+    border: 0.1px solid gray;
     margin: 100px;
     border-radius: 10px;
-    padding: 10px;
+    padding: 20px;
     transition: 0.6s;
 }
 
@@ -132,10 +171,7 @@ form
     margin-left: 50px;
     margin-top: 50px;
 }
-#copy
-{
-    text-align: center;
-}
+
 #social
 {
     height: 50px;
@@ -169,14 +205,21 @@ button
 {
     display: none;
 }
+#About
+{
+    height: 500px;
 }
+#
+}
+
+
 
 /* for mobile */
 @media (max-width: 480px)
 {
 #nav
 {
-    background-color: blue;
+    background-color: rgba(36, 36, 36, 0.6);
     height: 300px;
     width: 200px;
     position: fixed;
@@ -267,7 +310,7 @@ section>a
 }
 #sec:hover
 {
-    color: navy;
+    color: black;
 }
 footer
 {
@@ -290,10 +333,7 @@ form
     gap: 10px;
     margin-top: 50px;
 }
-#copy
-{
-    text-align: center;
-}
+
 #social
 {
     height: 50px;
